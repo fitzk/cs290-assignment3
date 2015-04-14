@@ -1,3 +1,4 @@
+/*started 2:56PM-finished-2:56PM*/
 /*
 Input:
 a: a whole, positive number
@@ -14,7 +15,9 @@ function variableModification(a) {
   var asString;
   var yourNumberIs;
   //your code here
-
+  plus5 = a + 5;
+  asString = a.toString();
+  yourNumberIs = "Your number is " + a + ".";
   //end your code
   return [plus5, asString, yourNumberIs, a];
 }
