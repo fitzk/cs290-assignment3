@@ -1,5 +1,5 @@
 /*started 2:56PM-finished-2:56PM*/
-/*
+/* 
 Input:
 a: a whole, positive number
 
@@ -22,7 +22,7 @@ function variableModification(a) {
   return [plus5, asString, yourNumberIs, a];
 }
 
-/*
+/* started 9:39AM - 9:42AM
 Input:
 b: could be anything
 
@@ -32,7 +32,10 @@ false otherwise
 */
 function isString(b) {
   //your code here
-  return undefined;
+  if(typeof b === 'string')
+	return true;
+  else
+	  return false;
   //end your code
 }
 
@@ -45,6 +48,9 @@ return true if c is null, false otherwise
 */
 function isNull(c) {
   //your code here
-  return undefined;
+  if(!c)
+	  return true;
+  else
+	  return false;
   //end your code
 }
