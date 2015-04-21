@@ -1,1 +1,116 @@
-You log goes in this  file.
+Your log goes in this  file.
+
+commit 28cb375f9d00fd6a645b927606d8c34d119b93cf
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 20:15:11 2015 +0000
+
+    pass all tests
+
+commit 55ef876a07c9bce5874c956950d60fc01b47ac30
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 19:53:17 2015 +0000
+
+    will not pass test #1, pass all others
+
+commit 5ea63b89d2c890d34dc11d114b2c8dd4eeb774bd
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 19:20:00 2015 +0000
+
+    add better regex expressions
+
+commit e0ba42d52c472652c24618a18e78feb8e61e0f5b
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 18:37:30 2015 +0000
+
+    add last function
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/assignment3$ git log --since=2.weeks
+commit 28cb375f9d00fd6a645b927606d8c34d119b93cf
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 20:15:11 2015 +0000
+
+    pass all tests
+
+commit 55ef876a07c9bce5874c956950d60fc01b47ac30
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 19:53:17 2015 +0000
+
+    will not pass test #1, pass all others
+
+commit 5ea63b89d2c890d34dc11d114b2c8dd4eeb774bd
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 19:20:00 2015 +0000
+
+    add better regex expressions
+
+commit e0ba42d52c472652c24618a18e78feb8e61e0f5b
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 18:37:30 2015 +0000
+
+    add last function
+
+commit 8f71bf12063855cb197f32a3f8206dcc0e1a2ec1
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 01:38:43 2015 +0000
+
+    add to constructor function
+
+commit 29ffe4183c439b9ba9f6a49b761713b56970f894
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 01:38:03 2015 +0000
+
+    complete each function
+
+commit 429f1711b92136d77e096543c7695cbb113ddf2a
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 21 01:37:00 2015 +0000
+
+    add first two functions
+
+commit b81a293ac23bca12730f13dbc20a6ab8dc5d0d75
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Mon Apr 20 19:25:04 2015 +0000
+
+    add constructor with functions for message log
+
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Mon Apr 20 19:25:04 2015 +0000
+
+    add constructor with functions for message log
+
+commit c63edd479a9c5b4fa103627e4f9372d6a2cdf37d
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Mon Apr 20 16:53:13 2015 +0000
+
+    add code to functions
+
+commit 2f8d220dd8ea8dee268238762a37c4309bbb1ed0
+Author: fitzsimk <kfitzsimmons11@gmail.com>
+Date:   Tue Apr 14 22:00:21 2015 +0000
+
+    finish first function
+{
+  commit 28cb375f9d00fd6a645b927606d8c34d119b93cf
+  Author: fitzsimk <kfitzsimmons11@gmail.com>
+  Date:   Tue Apr 21 20:15:11 2015 +0000
+
+      pass all tests
+
+  commit 55ef876a07c9bce5874c956950d60fc01b47ac30
+  Author: fitzsimk <kfitzsimmons11@gmail.com>
+  Date:   Tue Apr 21 19:53:17 2015 +0000
+
+      will not pass test #1, pass all others
+
+  commit 5ea63b89d2c890d34dc11d114b2c8dd4eeb774bd
+  Author: fitzsimk <kfitzsimmons11@gmail.com>
+  Date:   Tue Apr 21 19:20:00 2015 +0000
+
+      add better regex expressions
+
+  commit e0ba42d52c472652c24618a18e78feb8e61e0f5b
+  Author: fitzsimk <kfitzsimmons11@gmail.com>
+  Date:   Tue Apr 21 18:37:30 2015 +0000
+
+      add last function
+}
+* started 11:35AM - objects
