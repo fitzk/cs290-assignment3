@@ -29,7 +29,7 @@ function returnObjectLiteral() {
  *
  * In addition, the following methods should be
  * callable on a MessageLog object:
- * logMessage( {string} messageText, {number} direction) - This should log a
+ * [x]logMessage( {string} messageText, {number} direction) - This should log a
  * message as either being sent or received. A direction of 0 indicates it is a message
  * the user sent. A direction of 1 indicates it is a message the user received.
  * Behavior for other numbers is undefined.
@@ -54,18 +54,18 @@ function MessageLog(user) {
 
 		if (direction === 0) {
 			if (this.sent.length === 5) {
-				this.sent.shift();
+				this.sent.pop();
 			}
-			this.sent.push(messageText);
+			this.sent.unshift(messageText);
 			this.tSent++;
 		} else if (direction === 1) {
 			if (this.received.length === 5) {
-				this.received.shift();
+				this.received.pop();
 			}
-			this.received.push(messageText);
+			this.received.unshift(messageText);
 			this.tReceived++;
 		}
-	}
+	};
 
 	this.getSentMessage = function (n) {
 
@@ -93,9 +93,9 @@ function MessageLog(user) {
  * lastReceivedMessage() - returns the message text of the last message the user
  * received.
  */
-MessageLog.prototype.LastReceivedMessage = function(){
+MessageLog.prototype.lastReceivedMessage = function(){
 
-	return this.received[this.received.length-1];
+	return this.received[0];
 
 }//your code here
 
@@ -126,6 +126,6 @@ console.log(myLog.getSentMessage(1));
 console.log(myLog.getSentMessage(2));
 console.log(myLog.totalSent(2));
 
-console.log(myLog.LastReceivedMessage());
+console.log(myLog.lastReceivedMessage());
 console.log(myLog.totalReceived());
 //end your code
