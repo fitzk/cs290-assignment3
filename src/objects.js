@@ -42,13 +42,15 @@ function returnObjectLiteral() {
  * received
  */
 
-function createMessageLog(user) {
+function MessageLog(user) {
 
 	this.user = user;
 	this.sent = [];
 	this.received = [];
+	this.tReceived = 0;
+	this.tSent = 0;
 
-	logMessage = function (messageText, direction) {
+	this.logMessage = function (messageText, direction) {
 
 		if (direction === 0) {
 			if (this.sent.length === 5) {
@@ -82,9 +84,6 @@ function createMessageLog(user) {
 	};
 }
 
-//var rob = createMessageLog("Robert Pierce");
-
-
 //your code here
 
 //end your code
@@ -94,7 +93,11 @@ function createMessageLog(user) {
  * lastReceivedMessage() - returns the message text of the last message the user
  * received.
  */
-//your code here
+MessageLog.prototype.LastReceivedMessage = function(){
+
+	return this.received[this.received.length-1];
+
+}//your code here
 
 //end your code
 
@@ -105,5 +108,24 @@ function createMessageLog(user) {
  */
 
 //your code here
-createMessageLog("BlackHatGuy");
+var myLog = new MessageLog("BlackHatGuy");
+myLog.logMessage("sentfoo",0);
+myLog.logMessage("sentbar",0);
+myLog.logMessage("sentbaz",0);
+myLog.logMessage("sentfoo",0);
+myLog.logMessage("sentbar",0);
+myLog.logMessage("sentbaz",0)
+
+myLog.logMessage("foo",1);
+myLog.logMessage("bar",1);
+myLog.logMessage("baz",1);
+
+
+console.log(myLog.getSentMessage(0));
+console.log(myLog.getSentMessage(1));
+console.log(myLog.getSentMessage(2));
+console.log(myLog.totalSent(2));
+
+console.log(myLog.LastReceivedMessage());
+console.log(myLog.totalReceived());
 //end your code
