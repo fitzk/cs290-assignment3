@@ -1,5 +1,5 @@
 /*started 2:56PM-finished-2:56PM*/
-/* 
+/*
 Input:
 a: a whole, positive number
 
@@ -17,7 +17,7 @@ function variableModification(a) {
   //your code here
   plus5 = a + 5;
   asString = a.toString();
-  yourNumberIs = "Your number is " + a + ".";
+  yourNumberIs = "Your Number is " + a;
   //end your code
   return [plus5, asString, yourNumberIs, a];
 }
@@ -48,7 +48,7 @@ return true if c is null, false otherwise
 */
 function isNull(c) {
   //your code here
-  if(!c)
+  if(c === null)
 	  return true;
   else
 	  return false;
