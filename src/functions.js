@@ -12,7 +12,10 @@
 * @return {null} - 'useless'.
 */
 
-//your code here
+function uselessFunction(){
+
+  return null;
+}//your code here
 
 //end your code
 
@@ -28,6 +31,15 @@ var barType = typeof bar;
 * @return {boolean} - true if the operation was sucessful, false otherwise.
 * This should return false if any value in the array cannot be doubled.
 */
+bar = function (doubleArray){
+
+  for(var i = 0; i < doubleArray.length; i++){
+    if(typeof doubleArray[i] != 'number')
+          return false;
+    else{  doubleArray[i] *= 2; }
+  }
+  return true;
+}
 
 //your code here
 
@@ -60,11 +72,20 @@ function GitLog(hash, date, message) {
 *
 *
 * @param {array.<string>} logArray - an array of Git commit messages of the
-* above
-* format.
+* above format.
 * @return {array.<GitLog>} - return an array GitLog instances
 */
 
-//your code here
+function parseGit(array){
 
+  //array.forEach(function(value, index, array){
+
+  //var  hash = value.match("^\d+\s");
+  //console.log(hash);
+
+  //})
+
+}//your code here
+
+//parseGit("3782618 Wed, 7 Jan 2015 21:42:26 -0800 \"Initial commit\"");
 //end your code
