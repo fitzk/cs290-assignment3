@@ -55,7 +55,7 @@ bar = function (doubleArray){
 function GitLog(hash, date, message) {
 
     this.hash = hash;
-    this.date = date;
+    this.date = new Date(date);
     this.message = message;
 
 }
@@ -88,9 +88,12 @@ array.forEach(function(value, index, array){
 
     matchResults = value.match(/\w+[,]\s\d\s\w+\s\d+\s\d+[:]\d+[:]\d+\s[-]\d+/);
     var date = matchResults[0];
+    console.log(date);
 
-    matchResults = value.match(/\"(.*?)\"/);
+    matchResults = value.match(/".*$/);
     var message = matchResults[0];
+    message = message.slice(1,(message.length-1));
+
 
     var gitObj = new GitLog(hash,date,message);
     gitArray.push(gitObj);
@@ -99,5 +102,7 @@ array.forEach(function(value, index, array){
   return gitArray;
 }//your code here
 var logs = ['3782618 Wed, 7 Jan 2015 21:42:26 -0800 "Initial commit"','c314332 Wed, 7 Jan 2015 22:02:38 -0800 "Add empty bio.md"'];
-//end your code
-parseGit(logs);
+//end your code/
+var returnArray= parseGit(logs);
+
+console.log(returnArray[0]);
