@@ -109,23 +109,9 @@ MessageLog.prototype.lastReceivedMessage = function(){
 
 //your code here
 var myLog = new MessageLog("BlackHatGuy");
-myLog.logMessage("sentfoo",0);
-myLog.logMessage("sentbar",0);
-myLog.logMessage("sentbaz",0);
-myLog.logMessage("sentfoo",0);
-myLog.logMessage("sentbar",0);
-myLog.logMessage("sentbaz",0)
 
 myLog.logMessage("foo",1);
 myLog.logMessage("bar",1);
 myLog.logMessage("baz",1);
 
-
-console.log(myLog.getSentMessage(0));
-console.log(myLog.getSentMessage(1));
-console.log(myLog.getSentMessage(2));
-console.log(myLog.totalSent(2));
-
-console.log(myLog.lastReceivedMessage());
-console.log(myLog.totalReceived());
 //end your code
