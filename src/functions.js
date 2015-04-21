@@ -53,9 +53,11 @@ bar = function (doubleArray){
 * @property {string} message - the commit message
 */
 function GitLog(hash, date, message) {
+
     this.hash = hash;
     this.date = date;
     this.message = message;
+
 }
 
 /**
@@ -78,14 +80,27 @@ function GitLog(hash, date, message) {
 
 function parseGit(array){
 
-  //array.forEach(function(value, index, array){
+var gitArray = [];
+array.forEach(function(value, index, array){
 
-  //var  hash = value.match("^\d+\s");
-  //console.log(hash);
+    var matchResults = value.match(/\d+/);
+    var hash = matchResults[0];
 
-  //})
+    matchResults = value.match(/\w+[,]\s\d\s\w+\s\d+\s\d+[:]\d+[:]\d+\s[-]\d+/);
+    var date = matchResults[0];
+
+    matchResults = value.match(/["]\w+\s\w+[""]/);
+    var message = matchResults[0];
+
+    var gitObj = new GitLog(hash,date,message);
+    gitArray.push(gitObj);
+
+  });
+  console.log(gitArray[0]);
+  return gitArray;
+
 
 }//your code here
 
-//parseGit("3782618 Wed, 7 Jan 2015 21:42:26 -0800 \"Initial commit\"");
+parseGit(["3782618 Wed, 7 Jan 2015 21:42:26 -0800 \"Initial commit\"","3782618 Wed, 7 Jan 2015 21:42:26 -0800 \"Initial commit\""]);
 //end your code
