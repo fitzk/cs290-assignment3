@@ -48,7 +48,7 @@ function createMessageLog(user) {
 	this.sent = [];
 	this.received = [];
 
-	this.logMessage = function (messageText, direction) {
+	logMessage = function (messageText, direction) {
 
 		if (direction === 0) {
 			if (this.sent.length === 5) {
@@ -63,14 +63,14 @@ function createMessageLog(user) {
 			this.received.push(messageText);
 			this.tReceived++;
 		}
-	};
+	}
 
 	this.getSentMessage = function (n) {
 
 		return this.sent[n];
 
 	};
-	
+
 	this.totalSent = function () {
 
 		return this.tSent;
@@ -105,5 +105,5 @@ function createMessageLog(user) {
  */
 
 //your code here
-
+createMessageLog("BlackHatGuy");
 //end your code
