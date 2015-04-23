@@ -114,3 +114,4 @@ Date:   Tue Apr 14 22:00:21 2015 +0000
       add last function
 }
 * started 11:35AM - objects
+worked 4/22/2015 12am - 6pm (on src.js studying and working on program)
